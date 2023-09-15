@@ -1,5 +1,12 @@
 # Senior Backend Coding Challenge - Node.js
 
+## Pre-requisites
+- pnpm
+- docker
+- docker-compose
+
+**Make sure that you have those 3 dependencies installed before continuing**
+
 ## Introduction
 
 Welcome to the Senior Backend Coding Challenge! This challenge is designed to assess your skills in Node.js, GraphQL, MQTT, and Redis. You'll be working with two services: the "Hub Manager" and the "Box Driver."
