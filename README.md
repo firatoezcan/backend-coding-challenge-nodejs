@@ -14,26 +14,9 @@ This service simulates a remote hardware component with multiple compartments th
 
 Both services communicate with each other using MQTT, and Redis is used for storing state and Pub/Sub functionalities.
 
-### Sequence Diagram
+### Diagram
 
-```mermaid
-sequenceDiagram
-    participant c as Client
-    participant h as Hub Manager
-    participant m as MQTT Broker
-    participant b as Box Driver
-    b ->> m: Subscribe Message:<br>hub open
-    c ->> h: Mutation<br>open
-    activate h
-    h ->> m: Publish Message<br>hub open
-    h ->> m: Subcribe Message<br>hub opened
-    m ->> b: Message<br>hub open
-    b ->> b: Open Box
-    b ->> m: Publish Message:<br>hub opened
-    m ->> h: Message<br>hub opened
-    h ->> c: True
-    deactivate h
-```
+![Backend Diagram](./Backend-Challenge.png)
 
 ## Tasks
 
